@@ -9,15 +9,14 @@ import android.widget.Toast;
 
 import com.explam.mvpdemo.R;
 import com.explam.mvpdemo.adapter.MyAdapter;
-import com.explam.mvpdemo.base.IShowGirlView;
-import com.explam.mvpdemo.base.MvpActivity;
+import com.explam.mvpdemo.base.BaseMvpActivity;
 import com.explam.mvpdemo.bean.BaiduBeautyBean;
 import com.explam.mvpdemo.presenter.GirlPresenter;
 
 /**
  * V层activity,通过接口回调,从presenter中转,得到model数据
  */
-public class MainActivity extends MvpActivity<GirlPresenter> implements IShowGirlView {
+public class MainActivity extends BaseMvpActivity<GirlPresenter> implements IShowGirlView {
     private ListView mListview;
     private ProgressDialog mDialog;
 

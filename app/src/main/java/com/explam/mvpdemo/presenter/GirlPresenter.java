@@ -1,7 +1,7 @@
 package com.explam.mvpdemo.presenter;
 
 import com.explam.mvpdemo.base.BasePresenter;
-import com.explam.mvpdemo.base.IShowGirlView;
+import com.explam.mvpdemo.view.IShowGirlView;
 import com.explam.mvpdemo.bean.BaiduBeautyBean;
 import com.explam.mvpdemo.model.ILoadGirlModel;
 import com.explam.mvpdemo.model.LoadGirlModelImplV1;

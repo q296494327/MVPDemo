@@ -9,8 +9,7 @@ import android.widget.Toast;
 
 import com.explam.mvpdemo.R;
 import com.explam.mvpdemo.adapter.MyAdapter;
-import com.explam.mvpdemo.base.IShowGirlView;
-import com.explam.mvpdemo.base.MvpActivity;
+import com.explam.mvpdemo.base.BaseMvpActivity;
 import com.explam.mvpdemo.bean.BaiduBeautyBean;
 import com.explam.mvpdemo.presenter.GirlPresenter;
 
@@ -20,7 +19,7 @@ import com.explam.mvpdemo.presenter.GirlPresenter;
  * Time: 23:05
  * Desc: 如果要换一种V层显示,直接实现IShowGirlView接口就行了,P\M层不用做变动
  */
-public class MainActivity2 extends MvpActivity<GirlPresenter> implements IShowGirlView {
+public class MainActivity2 extends BaseMvpActivity<GirlPresenter> implements IShowGirlView {
     private Button mButton;
     private GridView mGridview;
     private ProgressDialog mDialog;
